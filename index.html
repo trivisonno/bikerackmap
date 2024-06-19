@@ -7,6 +7,7 @@
 	<style>
   body {
     margin: 0;            /* Reset default margin */
+    font-family: 'Arial', sans-serif
 }
 iframe {
     display: block;       /* iframes are inline by default */
@@ -19,6 +20,6 @@ iframe {
 </head>
 <body>
   <iframe src="https://overpass-turbo.eu/map.html?Q=%5Bout%3Ajson%5D%3B%0Aarea%283600182130%29-%3E.a%3B%0A%28%0A++way%5Bhighway%5D%5Bcycleway%5D%28area.a%29%3B%0A++way%5Bhighway%5D%5B%22cycleway%3Aleft%22%5D%28area.a%29%3B%0A++way%5Bhighway%5D%5B%22cycleway%3Aright%22%5D%28area.a%29%3B%0A++node%5Bshop%5D%28area.a%29%3B%0A++node%5Bhealthcare%5D%28area.a%29%3B%0A++node%5Boffice%5D%28area.a%29%3B%0A++++%09way%5Bamenity%7E%22%5E%28library%7Crestaurant%7Ccafe%7Cpub%7Cbank%7Carts_centre%7Cfast_food%7Cbar%7Cdentist%7Cplace_of_worship%7Cice_cream%7Ccommunity_centre%7Cclinic%7Csocial_facility%7Cschool%7Cmusic_venue%7Ccourthouse%7Cprison%29%24%22%5D%28area.a%29%3B%0A++++++%09way%5Bbuilding%7E%22%5E%28school%7C%29%24%22%5D%28area.a%29%3B%0A++way%5Bshop%5D%28area.a%29%3B%0A++node%5Bamenity%7E%22%5E%28library%7Crestaurant%7Ccafe%7Cpub%7Cbank%7Carts_centre%7Cfast_food%7Cbar%7Cdentist%7Cplace_of_worship%7Cice_cream%7Ccommunity_centre%7Cclinic%7Csocial_facility%7Cmusic_venue%29%24%22%5D%28area.a%29%3B%0A++++node%5Bleisure%3Dfitness_centre%5D%28area.a%29%3B%0A++%0A++node%5Btourism%7E%22%5E%28gallery%29%24%22%5D%28area.a%29%3B%0A++++way%5Bleisure%7E%22%5E%28fitness_centre%7Cpark%29%24%22%5D%28area.a%29%3B%0A++%0A++node%5Bamenity%3Dbicycle_parking%5D%28area.a%29%3B%0A%29%3B%0Aout+body%3B%0A%3E%3B%0Aout+skel+qt%3B%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%0A%7B%7Bstyle%3A++%2F*+this+is+the+MapCSS+stylesheet+*%2F%0A%0A%0Anode%2C+area%0A%7B+color%3Ared%3B+fill-color%3Ared%3B+%7D%0A%0Anode%5Bamenity%5D%2C%0Anode%5Bshop%5D%2C%0Anode%5Bhealthcare%5D%2C%0Anode%5Boffice%5D%2C%0Anode%5Bleisure%5D%2C%0Anode%5Btourism%5D%0A%7B+color%3Ared%3B+fill-color%3Ared%3B+%7D%0A%0Away%5Bhighway%5D%0A%7B+color%3Agreen%3B+fill-color%3Agreen%3Bz-index%3A-1%3B+%7D%0A%0Anode%5Bamenity%3Dbicycle_parking%5D%0A%7B+color%3Ablue%3B+fill-color%3Ablue%3B+z-index%3A1%3B+%7D%0A+%7D%7D"></iframe>
-  <div style="position: absolute;top: 0px;right: 0px;text-align: end;background:#ffffffd1;padding: 1vw;">Red = Amenity<br>Blue = Bike parking<br>Green = Bike lane</div>
+  <div style="position: absolute;top: 0px;right: 0px;text-align: end;background:#ffffffd1;padding: 1vw;">Red = Destination<br>Blue = Bike parking<br>Green = Bike lane</div>
 </body>
 </html>
